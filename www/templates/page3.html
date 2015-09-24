@@ -1,0 +1,33 @@
+<ion-view title="Login">
+    <ion-content ng-controller="SignInCtrl" padding="true" scroll="false" class="has-header">
+        <form name="testForm" novalidate>
+            
+        <label class="item item-input item-floating-label">
+            <span class="input-label">Username</span>
+            <input name="firstname" ng-model="user.emailid" type="text" ng-required="true" ng-minlength="4" ng-maxlength="10" placeholder="Username">
+        </label>
+        
+          <div class="item errors">
+           <!-- <p>firstname Errors:</p> -->    
+            <p ng-show="testForm.firstname.$error.required">Username is required</p>
+            <p ng-show="testForm.firstname.$error.minlength">Username is too short</p>
+            <p ng-show="testForm.firstname.$error.maxlength">Username is too long</p>
+          </div> 
+        
+        <label class="item item-input item-floating-label">
+            <span class="input-label">Password</span>
+            <input name="lastname" ng-model="user.pass" type="password" required ng-minlength="4" ng-maxlength="10" placeholder="Password">
+        </label>
+         
+        <div class="item errors">
+            <!--<p>lastname Errors:</p>-->
+            <p ng-show="testForm.lastname.$error.required">Password is required</p>
+            <p ng-show="testForm.lastname.$error.minlength">Password is too short</p>
+            <p ng-show="testForm.lastname.$error.maxlength">Password is too long</p>
+          </div>     
+            
+    </form>
+           <a ng-click="NewConnect()" href="" class="button button-positive button-block">New User ? Fill above Details &amp; Sign Up</a>
+        <a ng-click="Connect()" class="button button-positive button-block">Returning User ? Sign In</a>     
+    </ion-content>
+</ion-view>

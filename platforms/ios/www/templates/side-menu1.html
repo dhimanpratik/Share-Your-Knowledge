@@ -1,0 +1,32 @@
+<ion-side-menus enable-menu-with-back-views="true">
+    
+      <ion-view title="Welcome">  
+    <ion-nav-buttons side="right" ng-controller="BackBack">
+      <button class="button" ng-click="Backgo()">
+       Sign Out
+      </button>
+    </ion-nav-buttons>
+<ion-nav-buttons side="left"> <button menu-toggle="'left'" class="button" ng-click="toggleLeft()">Categories</button>
+           </ion-nav-buttons>
+          
+    <ion-side-menu-content edge-drag-threshold="true">
+        <ion-content padding="true" scroll="false" class="has-header">
+            <h1>This page will show the posts of the particular category.</h1>
+        </ion-content>
+    </ion-side-menu-content>
+    
+    
+<ion-side-menu side="left">
+        <ion-content padding="false" class="has-header">
+            <ion-list>
+                <ion-item>Moives</ion-item>
+                <ion-item>Technology</ion-item>
+                <ion-item>Politics</ion-item>
+                <ion-item>Places</ion-item>
+                <ion-item>Computers</ion-item>
+            </ion-list>
+        </ion-content>
+    </ion-side-menu>    
+    </ion-view>
+</ion-side-menus>
+    

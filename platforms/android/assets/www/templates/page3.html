@@ -1,0 +1,15 @@
+<ion-view title="Login">
+    <ion-content ng-controller="SignInCtrl" padding="true" scroll="false" class="has-header">
+        <label class="item item-input item-floating-label">
+            <span class="input-label">Email</span>
+            <input ng-model="user.emailid" type="text" placeholder="Username">
+        </label>
+        <label class="item item-input item-floating-label">
+            <span class="input-label">Password</span>
+            <input ng-model="user.pass" type="password" placeholder="Password">
+        </label>
+           <a ng-click="NewConnect()" href="" class="button button-positive button-block">New User ? Fill above Details &amp; Sign Up</a>
+        <a href="#/menu" ng-click="Connect()" class="button button-positive button-block">Returning User ? Sign In</a>
+     
+    </ion-content>
+</ion-view>

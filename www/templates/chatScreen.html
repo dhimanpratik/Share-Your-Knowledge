@@ -1,0 +1,26 @@
+<ion-view title="Chat">
+    <ion-content ng-controller="ChatController" padding="true" scroll="false" class="has-header">
+       
+        <ion-scroll direction="y" style="height: 94%">
+        <div ng-model="details">
+        <h2>{{details.name}}</h2>
+        <h4>{{details.desc}}</h4>    
+        </div>
+       
+        <div ng-repeat="item in chatdata">
+  <div class="item">
+      {{item.reply}}
+      <p>{{item.name}}</p>
+  </div>
+</div>
+    </ion-scroll>    
+        
+        <div  class="bar bar-footer" >
+      <input ng-model="rep" type="text" placeholder="Reply Here">
+    </label>
+    <button ng-click="reply()" class="button button-clear pull-right">
+      Submit
+    </button>
+  </div>
+    </ion-content>
+</ion-view>

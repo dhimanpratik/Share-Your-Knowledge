@@ -1,0 +1,32 @@
+<ion-view title="New Post">  
+       <ion-content ng-controller="AddNewPost" padding="true" scroll="false" class="has-header">
+           
+<div class="list">
+  <label class="item item-input item-select">
+    <div class="input-label">
+      Category
+    </div>
+    <select ng-model="post.category">
+      <option>Movies</option>
+      <option selected>Technology</option>
+      <option>Politics</option>
+      <option>Places</option>
+      <option>Computers</option>
+    </select>
+  </label>
+</div>
+    
+           
+        <label class="item item-input item-floating-label">
+            <span class="input-label">Give your Post a Name</span>
+            <input ng-model="post.name" type="text" placeholder="Give your Post a Name">
+        </label>
+        <label class="item item-input item-floating-label">
+            <span class="input-label">Now the details</span>
+            <textarea ng-model="post.descrip" type="text" placeholder="Now the details" rows="15"></textarea>
+        </label>
+        <a href="#/menu" ng-click="AddNew()" class="button button-positive button-block">Lets Share!</a>    <p>{{post.name}}</p>
+        <p>{{post.descrip}}</p>
+        <p>{{post.category}}</p>
+    </ion-content>
+</ion-view>

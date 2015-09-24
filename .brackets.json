@@ -1,0 +1,17 @@
+{
+    "jscodehints.detectedExclusions": [
+        "/Users/pratikdhiman/SYK/www/lib/ionic/js/ionic.min.js",
+        "/Users/pratikdhiman/SYK/www/lib/ionic/js/ionic.js",
+        "/Users/pratikdhiman/SYK/www/lib/ionic/js/ionic.bundle.min.js",
+        "/Users/pratikdhiman/SYK/plugins/org.apache.cordova.device/src/windows/DeviceProxy.js",
+        "/Users/pratikdhiman/SYK/plugins/org.apache.cordova.device/src/windows8/DeviceProxy.js",
+        "/Users/pratikdhiman/SYK/plugins/org.apache.cordova.device/tests/tests.js",
+        "/Users/pratikdhiman/SYK/plugins/org.apache.cordova.device/www/device.js",
+        "/Users/pratikdhiman/SYK/plugins/org.apache.cordova.device/src/ubuntu/device.js",
+        "/Users/pratikdhiman/SYK/www/lib/ionic/js/angular/angular-animate.js",
+        "/Users/pratikdhiman/SYK/www/lib/ionic/js/angular/angular-animate.min.js",
+        "/Users/pratikdhiman/SYK/www/lib/ionic/js/angular/angular-resource.js",
+        "/Users/pratikdhiman/SYK/www/lib/ionic/js/angular/angular-resource.min.js",
+        "/Users/pratikdhiman/SYK/www/lib/ionic/js/angular/angular-sanitize.js"
+    ]
+}

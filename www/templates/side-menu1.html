@@ -1,0 +1,21 @@
+<ion-view ng-controller="GetPosts" title="Welcome">
+        <ion-content padding="true" scroll="false" class="has-header">
+         
+            <ion-scroll direction="y" style="height: 80%">    
+            <div>
+    <a ng-repeat="(key,items) in data" class="item" href="#/chatScreen" ng-click="saveKey(key)">
+      <h2>{{items.name}}</h2>
+      <p>{{items.desc}}</p>
+      <p>posted by {{items.username}}</p>
+    </a>
+            </div>
+            
+    </ion-scroll>
+            
+    <div class="bar-footer">    
+            <a href="#/home" class="button button-positive button-block">Root Menu</a>
+            
+            <a href="#/NewPost" class="button button-positive button-block">Share Your Knowledge</a>
+     </div>      
+        </ion-content>
+</ion-view>    
